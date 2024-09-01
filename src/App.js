@@ -4,7 +4,8 @@ import MenuPage from './MenuPage';
 const App = () => {
   return (
     <div>
-      <MenuPage />
+      <h1>Welcome to My Restaurant Menu App</h1>
+      <p>This is the main content of the app.</p>
     </div>
   );
 };
