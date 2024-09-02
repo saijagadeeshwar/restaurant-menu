@@ -14,7 +14,7 @@ export const menuData = {
           name: "Al Pastor Tacos",
           description: "Marinated pork tacos topped with pineapple, cilantro, and onions.",
           price: "$12",
-          image: "taco-2.png"
+          image: "taco-4.png"
         },
         {
           name: "Fish Tacos",
@@ -26,7 +26,7 @@ export const menuData = {
           name: "Chicken Tacos",
           description: "Grilled chicken tacos with lettuce, cheese, and salsa.",
           price: "$12",
-          image: "taco-4.png"
+          image: "taco-2.png"
         }
       ]
     },
