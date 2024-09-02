@@ -4,87 +4,103 @@ body {
     background-color: #fdf4e3;
   }
   
-  .menu-page {
+  .menu-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fdf4e3;
-    border: 10px solid #d04a02;
-    border-left-color: #3e7631;
-    border-right-color: #3e7631;
+    border-left: 20px solid #d04a02;
+    border-right: 20px solid #3e7631;
+    border-top: 10px solid #fdf4e3;
+    border-bottom: 10px solid #fdf4e3;
   }
   
-  .menu-title {
+  .restaurant-title {
     text-align: center;
-    font-size: 36px;
-    color: #017353;
-    margin-bottom: 20px;
+    font-size: 48px;
+    color: #e57373;
+    margin-bottom: 40px;
+  }
+  
+  .menu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .menu-category {
-    margin-top: 20px;
+    width: 48%;
+    margin-bottom: 40px;
   }
   
-  .category-name {
-    font-size: 24px;
-    color: #d04a02;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-  }
-  
-  .category-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .category-title {
+    font-size: 36px;
+    color: #ffb300;
+    margin-bottom: 20px;
   }
   
   .menu-item {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    align-items: center; /* Vertically center align */
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
-  .item-name {
-    font-size: 18px;
+  .menu-item-image {
+    width: 150px; /* Increased image size */
+    height: 150px; /* Increased image size */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .menu-item-details {
+    flex: 1;
+  }
+  
+  .menu-item-name {
+    font-size: 24px;
     color: #333;
   }
   
-  .item-name p {
-    font-size: 14px;
+  .menu-item-description {
+    font-size: 16px;
     color: #777;
-    margin: 5px 0 0;
+    margin: 10px 0;
   }
   
-  .item-price {
+  .menu-item-price {
     font-size: 20px;
-    color: #017353;
+    color: #e57373;
     font-weight: bold;
   }
   
-  .menu-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .menu-footer p {
-    margin: 5px 0;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .menu-page {
-      padding: 10px;
+  @media (max-width: 768px) {
+    .menu-category {
+      width: 100%;
     }
   
-    .item-name {
-      font-size: 16px;
+    .menu-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   
-    .item-price {
-      font-size: 18px;
+    .menu-item-image {
+      margin: 0 0 10px 0;
+    }
+  
+    .menu-item-name,
+    .menu-item-price {
+      font-size: 20px;
+    }
+  
+    .menu-item-description {
+      font-size: 14px;
     }
   }
   

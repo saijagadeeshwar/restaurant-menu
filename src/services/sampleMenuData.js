@@ -1,58 +1,61 @@
 export const menuData = {
-  name: "MEXICAN MENU",
+  name: "Mexican Restaurant",
   categories: [
     {
-      name: "",
+      name: "Tacos",
       items: [
         {
-          name: "Nachos rancheros",
-          description: "Insert dish description here",
-          price: "$10"
+          name: "Carne Asada Tacos",
+          description: "Grilled steak tacos served with onions, cilantro, and a wedge of lime.",
+          price: "$12",
+          image: "taco-1.png"
         },
         {
-          name: "Onion rings",
-          description: "Insert dish description here",
-          price: "$10"
+          name: "Al Pastor Tacos",
+          description: "Marinated pork tacos topped with pineapple, cilantro, and onions.",
+          price: "$12",
+          image: "taco-2.png"
         },
         {
-          name: "Huevos con papa",
-          description: "Insert dish description here",
-          price: "$10"
+          name: "Fish Tacos",
+          description: "Crispy fish tacos served with cabbage, pico de gallo, and creamy sauce.",
+          price: "$12",
+          image: "taco-3.png"
         },
         {
-          name: "Chicken or beef burrito",
-          description: "Insert dish description here",
-          price: "$10"
+          name: "Chicken Tacos",
+          description: "Grilled chicken tacos with lettuce, cheese, and salsa.",
+          price: "$12",
+          image: "taco-4.png"
+        }
+      ]
+    },
+    {
+      name: "Burgers",
+      items: [
+        {
+          name: "Classic Cheeseburger",
+          description: "Juicy beef patty topped with cheddar cheese, lettuce, tomato, and onions..",
+          price: "$12",
+          image: "burger-1.png"
         },
         {
-          name: "Seafood enchiladas",
-          description: "Insert dish description here",
-          price: "$10"
+          name: "BBQ Bacon Burger",
+          description: "Beef burger with crispy bacon, BBQ sauce, and cheddar cheese.",
+          price: "$12",
+          image: "burger-2.png"
         },
         {
-          name: "Three rolled beef taquitos",
-          description: "Insert dish description here",
-          price: "$10"
+          name: "Mushroom Swiss Burger",
+          description: "Beef patty with sautéed mushrooms, Swiss cheese, and garlic aioli.",
+          price: "$12",
+          image: "burger-3.png"
         },
         {
-          name: "Beef & mushroom quesadillas",
-          description: "Insert dish description here",
-          price: "$10"
-        },
-        {
-          name: "Pepper steak",
-          description: "Insert dish description here",
-          price: "$10"
-        },
-        {
-          name: "Lemon chicken",
-          description: "Insert dish description here",
-          price: "$10"
-        },
-        {
-          name: "Chips with curry sauce",
-          description: "Insert dish description here",
-          price: "$10"
+          name: "Veggie Burger",
+          description: "Grilled veggie patty with lettuce, tomato, avocado, and vegan mayo.",
+          price: "$12",
+          image: "burger-4.png"
         }
       ]
     }
