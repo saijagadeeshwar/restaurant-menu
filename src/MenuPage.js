@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchMenuData } from './services/menuService';
 import Menu from './components/Menu';
+import './MenuPage.css';
 
 const MenuPage = () => {
   const [menuData, setMenuData] = useState(null);
@@ -15,7 +16,7 @@ const MenuPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="menu-page">
       {menuData ? (
         <Menu menuData={menuData} />
       ) : (
