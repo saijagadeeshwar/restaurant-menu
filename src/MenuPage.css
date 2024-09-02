@@ -42,7 +42,7 @@ body {
   
   .menu-item {
     display: flex;
-    align-items: center; /* Vertically center align */
+    align-items: center;
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
@@ -51,8 +51,8 @@ body {
   }
   
   .menu-item-image {
-    width: 150px; /* Increased image size */
-    height: 150px; /* Increased image size */
+    width: 150px; /* Fixed width for uniformity */
+    height: 150px; /* Fixed height for uniformity */
     object-fit: cover;
     border-radius: 10px;
     margin-right: 20px;
@@ -60,6 +60,9 @@ body {
   
   .menu-item-details {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
   }
   
   .menu-item-name {
@@ -79,28 +82,69 @@ body {
     font-weight: bold;
   }
   
+  /* Responsive design adjustments */
   @media (max-width: 768px) {
     .menu-category {
-      width: 100%;
+      width: 100%; /* Make categories full width on smaller screens */
     }
   
     .menu-item {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      flex-direction: row; /* Keep the image and text side by side */
+      align-items: center; /* Ensure they are centered vertically */
     }
   
     .menu-item-image {
-      margin: 0 0 10px 0;
+      width: 180px; /* Increase image size for smaller screens */
+      height: 180px;
+      margin-right: 15px;
     }
   
-    .menu-item-name,
-    .menu-item-price {
-      font-size: 20px;
+    .menu-item-name {
+      font-size: 20px; /* Reduce font size on smaller screens */
     }
   
     .menu-item-description {
-      font-size: 14px;
+      font-size: 14px; /* Reduce font size on smaller screens */
+    }
+  
+    .menu-item-price {
+      font-size: 18px; /* Reduce font size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-category {
+      width: 100%; /* Full width on very small screens */
+    }
+  
+    .menu-item {
+      flex-direction: row; /* Ensure side by side layout */
+      align-items: center; /* Ensure items stretch to same height */
+    }
+  
+    .menu-item-image {
+      width: 160px; /* Slightly reduce image size for very small screens */
+      height: 160px;
+      margin-right: 15px;
+    }
+  
+    .menu-item-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center the text vertically */
+    }
+  
+    .menu-item-name {
+      font-size: 18px; /* Smaller font size for names */
+    }
+  
+    .menu-item-description {
+      font-size: 12px; /* Smaller description font */
+    }
+  
+    .menu-item-price {
+      font-size: 16px; /* Smaller price font */
     }
   }
   
